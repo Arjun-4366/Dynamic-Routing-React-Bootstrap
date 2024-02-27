@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Blogs from "./pages/Blogs";
 import Blogdetails from "./pages/Blogdetails";
+import Error from "./pages/Error";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/blog" element={<Blogs />}></Route>
           <Route path="/blog/:id" element={<Blogdetails />}></Route>
+          <Route path="*" element={<Error />}></Route>
         </Routes>
       </div>
     </BrowserRouter>
